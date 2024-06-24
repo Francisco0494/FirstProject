@@ -27,19 +27,23 @@ body{
 
 .navbar{
     display:flex;
-    position:fixed;
+    position:sticky;
     background-color: white;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 4px 8px rgb(0,0,0,0.3);
     transition: background-color 0.4s;
+    top: 0;
+    z-index: 10;
+    min-height: 45px;
 }
 
 .navbar ul{
     display: flex;
     list-style-type: none;
 }
+
 
 .navbar ul li a{
     text-decoration: none;
@@ -62,4 +66,52 @@ body{
 #logo{
     width: 75px;
     height: 75px;
+}
+
+.dropdown-menu{
+    position:relative;
+    display:inline-block;
+}
+
+.dropdown-button{
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    padding: 10px;
+
+}
+
+.dropdown-menu .dropdown-button{
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.dropdown-button:hover{
+    color:brown;
+}
+
+.dropdown-menu:hover .dropdown-feature {
+    display: block;
+}
+
+.dropdown-feature{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+}
+
+.dropdown-feature a:hover{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 }

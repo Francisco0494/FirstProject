@@ -1,5 +1,6 @@
 const navbarElement = document.querySelector(".navbar");
 const bottomContainerElement = document.querySelector(".bottom-container");
+let hola=0;
 
 console.log(navbarElement.offsetHeight);
 

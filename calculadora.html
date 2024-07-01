@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="index.html"><img src="Resources/camisa-de-entrenamiento.png" alt="logo" id="logo"/></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="dropdown-menu">
+                    <a href="#">About us</a>
+                    <button class="dropdown-button"></button>
+                    <div class="dropdown-feature">
+                        <a href="calculadora.html">Tip Calculator</a>
+                        <a href="#">Minigames</a>
+                        <a href="#">Random photos</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="container">
+            <h1>Tip Calculator</h1>
+            <p>Write the total amount and the what tip do you want to add</p>
+            <label for="Bill">Bill amount</label>
+            <input type="number" id="Bill">
+            </br>
+            <label for="Porcentaje">Tip percentage</label>
+            <input type="number" id="Porcentaje">
+            </br>
+            <button id="calcular">Calculate</button>
+            </br>
+            <label for="Total">Total:</label>
+            <span id="Total"></span>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
